@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>App - Convertidor de Monedas con JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="imagenes/Rodrigo dominguez.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+
+
+  <body>
+    <div class="wrapper">
+      <header>Convertidor de Monedas</header>
+      <form action="#">
+        <div class="amount">
+          <p>Ingrese la cantidad</p>
+          <input type="text" value="1">
+        </div>
+        <div class="drop-list">
+          <div class="from">
+            <p>de</p>
+            <div class="select-box">
+              <img src="https://flagcdn.com/48x36/ar.png" alt="flag">
+              <select> <!-- La etiqueta de opciones se inserta desde JavaScript --> </select>
+            </div>
+          </div>
+          <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+          <div class="to">
+            <p>a</p>
+            <div class="select-box">
+              <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+              <select> <!-- La etiqueta de opciones se inserta desde JavaScript --> </select>
+            </div>
+          </div>
+        </div>
+        <div class="exchange-rate">Obtener tipo de cambio...</div>
+        <button>Obtener tipo de cambio</button>
+      </form>
+    </div>
+
+    <script src="js/country-list.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
